@@ -11,7 +11,7 @@ Challenge de API de gestión de vuelos y reservas para Sulzer Airlines
 - Arquitectura en capas: Dominio, Aplicación, Infraestructura y API
 - Tests unitarios con xUnit y Moq.
 
-> Estructura del Proyecto..
+> Estructura del Proyecto
 
 - **SulzerAirlines.Domain**: Entidades, Value Objects y lógica de dominio.
 - **SulzerAirlines.Application**: Servicios de aplicación, interfaces y lógica de negocio orquestada.
