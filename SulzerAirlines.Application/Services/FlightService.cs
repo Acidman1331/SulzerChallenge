@@ -86,6 +86,9 @@ public class FlightService : IFlightService
         return combinedRoutes;
     }
 
-    
+    public async Task<IReadOnlyList<FlightRoute>> GetRoutesAsync(City from, City to)
+    {
+        return await _flightRepository.GetRoutesAsync(from, to);
+    }
 }
 

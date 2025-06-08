@@ -9,6 +9,10 @@
     <ProjectReference Include="..\SulzerAirlines.Infrastructure\SulzerAirlines.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Queries\GetCheapestFlight\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

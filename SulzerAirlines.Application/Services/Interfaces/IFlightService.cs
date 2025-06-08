@@ -7,6 +7,7 @@ public interface IFlightService
     Task<IReadOnlyList<RouteOption>> GetCheapestRouteAsync(City from, City to, DateTime date);
     Task<IReadOnlyList<RouteOption>> GetRoundTripAsync(City from, City to, int maxConnections);
     Task<List<BestTimeToFlyResult>> GetBestTimeToFlyAsync(City from, City to);
+    Task<IReadOnlyList<FlightRoute>> GetRoutesAsync(City from, City to);
 }
 
 public interface ISeatManagerService
