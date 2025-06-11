@@ -12,12 +12,20 @@ public class BookFlightCommandHandler
 
     public async Task<BookingResult> Handle(BookFlightCommand command)
     {
-        return await _bookingService.BookFlightAsync(
+        var result = await _bookingService.BookFlightAsync(
             command.From,
             command.To,
             command.FlightDateTime,
             command.BPrice,
             command.Seats
         );
+
+        if (result.Success)
+        {
+            // Aquí publicarías el evento a Kafka
+            // await _eventBus.PublishAsync(new BookingCreatedEvent(...));
+        }
+
+        return result;
     }
 }
